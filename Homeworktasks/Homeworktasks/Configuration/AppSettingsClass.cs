@@ -10,12 +10,15 @@ namespace Homeworktasks.Configuration
     {
         public string Port { get; private set; }
         public string Address { get; private set; }
+        public string StaticFilesPath { get; private set; }
 
         public AppSettingsClass(string port = "",
-            string address = "")
+            string address = "",
+            string staticFilesPath = "")
         {
             Port = port;
             Address = address;
+            StaticFilesPath = staticFilesPath;
         }
     }
 }
